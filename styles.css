@@ -1,0 +1,72 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+    gap: 1px;
+}
+
+header{
+    grid-area: header;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+nav{
+    grid-area: nav;
+    border-style: solid;
+    border-width: 1px;
+    height: 5vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Ändrar link färg till #111 för när "hovering" sker */
+  li a:hover {
+    background-color: #111;
+  }
+
+  li:last-child{
+    float: right;
+    border-right: none;
+  }
+   
+  
+
+main{
+    grid-area: main;
+    border-style: solid;
+    border-width: 1px;
+    height: 76vh;
+}
+
+footer{
+    grid-area: footer;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
