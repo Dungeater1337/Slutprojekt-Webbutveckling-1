@@ -136,12 +136,10 @@ footer {
 
 #nar1{
   grid-area: article1;
-  border-style: solid;
-  border-width: 1px;
-  height: 80vh; 
+  height: 70vh; 
 }
 
-#title1{
+#nt1{
   height: auto;
   font-size: 1.5em;
   margin: auto;
@@ -149,12 +147,10 @@ footer {
 
 #nar2{
   grid-area: article2;
-  border-style: solid;
-  border-width: 1px;
-  height: 80vh; 
+  height: 70vh; 
 }
 
-#title2{
+#nt2{
   height: auto;
   font-size: 1.5em;
   margin: auto;
