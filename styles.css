@@ -7,7 +7,8 @@ body{
   "main"
   "footer"
   ;
-  
+  padding: none;
+  margin: 0%;
 }
 
 header{
@@ -18,8 +19,6 @@ header{
 
 nav{
   grid-area: nav;
-  border-style: solid;
-  border-width: 1px;
   height: auto;
 }
 
@@ -57,13 +56,13 @@ ul {
    
   
 
-main{
+#hm{
   display: grid;
   grid-template-areas: 
   ". art ."
   ;
   grid-area: main;
-  height: 76vh;
+  height: auto;
 }
 
 article{
@@ -71,6 +70,7 @@ article{
 }
 
 img{
+  margin-top: 10%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -81,16 +81,75 @@ img{
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 8%;
 }
 
 footer{
   grid-area: footer;
+  background-color: #333;
   border-top-style: solid;
   border-width: 1px;
   text-align: center;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  overflow: hidden;
-
+  color: white;
+  height: auto;
+  padding: 0;
 }
 
+
+#nyheter{
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "nav nav"
+  "main main"
+  "footer footer"
+  ;
+  padding: none;
+  margin: 0%;
+}
+
+#nyheter{
+  grid-area: header;
+  height: auto;
+}
+
+#nnyheter{
+  grid-area: nav;
+  height auto;
+}
+
+#mnyheter{
+  grid-area: main;
+  display:grid;
+  grid-template-areas: 
+  "article1 article2"
+  ;
+  height: auto;
+}
+
+#nar1{
+  grid-area: article1;
+  border-style: solid;
+  border-width: 1px;
+  height: 80vh; 
+}
+
+#title1{
+  height: auto;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+#nar2{
+  grid-area: article2;
+  border-style: solid;
+  border-width: 1px;
+  height: 80vh; 
+}
+
+#title2{
+  height: auto;
+  font-size: 1.5em;
+  margin: auto;
+}
