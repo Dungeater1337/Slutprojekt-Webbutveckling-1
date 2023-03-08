@@ -139,19 +139,21 @@ footer {
   height: 70vh; 
 }
 
+#nar2{
+  grid-area: article2;
+  height: 70vh; 
+}
+
 #nt1{
   height: auto;
   font-size: 1.5em;
   margin: auto;
-}
-
-#nar2{
-  grid-area: article2;
-  height: 70vh; 
+  text-align: left;
 }
 
 #nt2{
   height: auto;
   font-size: 1.5em;
   margin: auto;
+  text-align: left;
 }
