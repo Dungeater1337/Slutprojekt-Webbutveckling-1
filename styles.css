@@ -74,7 +74,7 @@ article{
 }
 
 img{
-  margin-top: 10%;
+  margin-top: 5%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -136,12 +136,12 @@ footer {
 
 #nar1{
   grid-area: article1;
-  height: 70vh; 
+  height: auto; 
 }
 
 #nar2{
   grid-area: article2;
-  height: 70vh; 
+  height: auto; 
 }
 
 #nt1{
