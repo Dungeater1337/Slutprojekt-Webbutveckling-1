@@ -58,7 +58,7 @@ ul {
     border-left: 1px solid#bbb;
   }
   
-#hm{
+.hm{
   display: grid;
   grid-template-areas: 
   ". art ."
@@ -83,7 +83,7 @@ img{
   height: auto;
 }
 
-#bajs{
+.bajs{
   text-align: left;
   margin-left: 20%;
   margin-right: 20%;
@@ -102,7 +102,7 @@ footer {
 }
 
 
-#nyheter{
+.nyheter{
   height: 100%;
   display: grid;
   grid-template-areas: 
@@ -115,17 +115,17 @@ footer {
   margin: 0%;
 }
 
-#nyheter{
+.nyheter{
   grid-area: header;
   height: auto;
 }
 
-#nnyheter{
+.nnyheter{
   grid-area: nav;
   height: auto;
 }
 
-#mnyheter{
+.mnyheter{
   grid-area: main;
   display:grid;
   grid-template-areas: 
@@ -134,24 +134,24 @@ footer {
   height: auto;
 }
 
-#nar1{
+.nar1{
   grid-area: article1;
   height: auto; 
 }
 
-#nar2{
+.nar2{
   grid-area: article2;
   height: auto; 
 }
 
-#nt1{
+.nt1{
   height: auto;
   font-size: 1.5em;
   margin: auto;
   text-align: left;
 }
 
-#nt2{
+.nt2{
   height: auto;
   font-size: 1.5em;
   margin: auto;
