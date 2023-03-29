@@ -1,167 +1,59 @@
-body{                             
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-areas: 
-  "header"
-  "nav"
-  "main"
-  "footer"
-  ;
-  padding: none;
-  margin: 0%;
-  background-color: #333;
+#index{
+    display: grid;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    grid-template-areas:
+    "header"
+    "navbar"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto auto;
 }
-
-.startm{
-  border-style: solid;
-  border-radius: 1em;
-  height: auto;
-}
-
 
 header{
-  grid-area: header;
-  text-align: center;
-  height: auto;
-  padding: 2vh;
-  background-color: white;
+    grid-area: header;
+    text-align: center;
 }
 
 nav{
-  height: auto;
+    grid-area: navbar;
+    background: #222;
 }
 
-ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  }
-  
-  li {
-    border-right: 1px solid #bbb;
-  }
-  
-  li a {
+.meny{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 25px;
+    padding: 2em;
     text-decoration: none;
   }
-  
-  /* Ändrar link färg till #111 för när "hovering" sker */
-  li a:hover {
-    background-color: #111;
+
+  li a:hover{
+    background-color: white;
+    color: black;
   }
 
-  li:last-child{
-    border-right: none;
-    border-left: 1px solid#bbb;
-  }
-  
-.hm{
-  display: grid;
-  grid-template-areas: 
-  ". art ."
-  ;
-  grid-area: main;
-  height: auto;
-  background-color: white;
+
+
+main{
+    grid-area: main;
+    display: grid;
+    height: 80vh;
 }
 
-article{
-  grid-area: art;
-  border-style: 1px solid;
-  padding: 1em;
-}
-
-img{
-  margin-top: 5%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  max-width: 100%;
-  height: auto;
-}
-
-.bajs{
-  text-align: left;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 8%;
-}
-
-footer {
-  grid-area: footer;
-  background-color: #333;
-  border-top-style: solid;
-  border-width: 1px;
-  text-align: center;
-  color: white;
-  height: auto;
-  padding: 0;
-}
-
-
-.nyheter{
-  height: 100%;
-  display: grid;
-  grid-template-areas: 
-  "header header"
-  "nav nav"
-  "main main"
-  "footer footer"
-  ;
-  padding: none;
-  margin: 0%;
-}
-
-.nyheter{
-  grid-area: header;
-  height: auto;
-}
-
-.nnyheter{
-  grid-area: nav;
-  height: auto;
-}
-
-.mnyheter{
-  grid-area: main;
-  display:grid;
-  grid-template-areas: 
-  "article1 article2"
-  ;
-  height: auto;
-  background-color: white;
-}
-
-.nar1{
-  grid-area: article1;
-  height: auto; 
-}
-
-.nar2{
-  grid-area: article2;
-  height: auto; 
-}
-
-.nt1{
-  height: auto;
-  font-size: 1.5em;
-  margin: auto;
-  text-align: left;
-}
-
-.nt2{
-  height: auto;
-  font-size: 1.5em;
-  margin: auto;
-  text-align: left;
+footer{
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    background-color: #222;
 }
