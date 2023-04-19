@@ -51,6 +51,14 @@ main{
 height: 80vh;
 }
 
+#infogrid{
+    display: grid;
+}
+
+.introtext{
+    text-align: left;
+}
+
 img{
     display: block;
     margin-left: auto;
