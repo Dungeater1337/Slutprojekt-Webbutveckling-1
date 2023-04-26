@@ -26,7 +26,7 @@ nav{
     background: #222;
 }
 
-.meny{
+nav ul{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -47,16 +47,13 @@ li a:hover{
     color: black;
 }
 
-main{
-height: 80vh;
-}
-
-#infogrid{
-    display: grid;
+h2, h3{
+margin-left: 2%;
 }
 
 .introtext{
     text-align: left;
+    margin-left: 2%;
 }
 
 img{
