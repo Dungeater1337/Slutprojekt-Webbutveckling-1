@@ -23,6 +23,14 @@ body{
     ;
 }
 
+#historiagrid{
+    display: grid;
+    grid-template-areas: 
+    "section figure aside"
+
+    ;
+}
+
 header{
     grid-area: header;
 }
@@ -61,16 +69,37 @@ h2, h3{
 margin-left: 2%;
 }
 
-.introtext{
+p{
     text-align: left;
     margin-left: 2%;
+    margin-right: 2%;
+}
+
+#startbild{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 55%;
+    max-width: 100%;
+    height: auto;
+}
+
+#infobild{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22%;
+    max-width: 100%;
+    height: auto;
 }
 
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    margin-top: 8%;
+    width: 85%;
     max-width: 100%;
     height: auto;
 }
