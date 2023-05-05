@@ -30,6 +30,7 @@ body{
     ;
 }
 
+
 header{
     grid-area: header;
 }
@@ -103,6 +104,13 @@ img{
     height: auto;
 }
 
+table, th, td {
+    border:1px solid black;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 600px;
+  }
+
 footer{
     grid-area: footer;
     text-align: center;
@@ -112,6 +120,12 @@ footer{
 
 @media (max-width: 600px) {
     nav ul{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+    section{
         flex-direction: column;
     }
 }
