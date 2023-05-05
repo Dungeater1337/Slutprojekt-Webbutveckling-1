@@ -27,7 +27,6 @@ body{
     display: grid;
     grid-template-areas: 
     "section figure aside"
-
     ;
 }
 
