@@ -16,7 +16,7 @@ body{
     grid-template-rows: auto auto auto 1fr;
 }
 
-#nyhetsgrid{
+#nyhetsochextragrid{
     display:grid;
     grid-template-areas:
     "section section"
@@ -63,6 +63,10 @@ li a {
 li a:hover{  
     background-color: white;
     color: black;
+}
+
+ul li{
+  
 }
 
 h2, h3{
