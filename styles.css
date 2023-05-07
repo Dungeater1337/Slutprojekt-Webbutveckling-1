@@ -1,7 +1,9 @@
+/* Gör så body täcker hela sidan */
 body{
   margin: 0;
 }
 
+/*Layout for header, navbar, main och footer*/
 .wrapper{
     display: grid;
     height: auto;
@@ -16,6 +18,7 @@ body{
     grid-template-rows: auto auto auto 1fr;
 }
 
+/*layout for main i nyheter.html och extra.html*/
 #nyhetsochextragrid{
     display:grid;
     grid-template-areas:
@@ -23,6 +26,7 @@ body{
     ;
 }
 
+/*Layout för main i historia.html*/
 #historiagrid{
     display: grid;
     grid-template-areas: 
@@ -30,20 +34,31 @@ body{
     ;
 }
 
-
+/*placera header*/
 header{
     grid-area: header;
 }
 
+/*Sätter h1 text i mitten*/
 h1{
     text-align:center;
 }
 
+/*Placera navbar och sätter bakgrundfärg*/
 nav{
     grid-area: navbar;
     background: #222;
 }
 
+/*Placera footer och design för den*/
+footer{
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    background-color: #222;
+}
+
+/*Sätter nav med ul som flex och gör så alla länkar är lika långt avstånd från varandra horizontelt*/
 nav ul{
     display: flex;
     justify-content: space-evenly;
@@ -52,6 +67,7 @@ nav ul{
     padding: 1px;
 }
 
+/*Design för länkar*/
 li a {
     display: block;
     color: white;
@@ -60,25 +76,25 @@ li a {
     text-decoration: none;
 }
 
+/*Ändra färg på länkarna på man hovera över*/
 li a:hover{  
     background-color: white;
     color: black;
 }
 
-ul li{
-  
-}
-
+/*Gör så att rubrikerna inte börja längst ut åt vänster så det blir lättare att läsa*/
 h2, h3{
 margin-left: 2%;
 }
 
+/*Texter börjar från vänster och gör så dom inte gå längst ut så det blir lättare att läsa*/
 p{
     text-align: left;
     margin-left: 2%;
     margin-right: 2%;
 }
 
+/*id för start bild på första sidan med design*/
 #startbild{
     display: block;
     margin-left: auto;
@@ -89,6 +105,7 @@ p{
     height: auto;
 }
 
+/*id för info bild med design*/
 #infobild{
     display: block;
     margin-left: auto;
@@ -98,6 +115,7 @@ p{
     height: auto;
 }
 
+/*Design för bilder "overall"*/
 img{
     display: block;
     margin-left: auto;
@@ -108,28 +126,18 @@ img{
     height: auto;
 }
 
+/*Design för tabeller*/
 table, th, td {
     border:1px solid black;
     margin-left: 2%;
     margin-bottom: 2%;
     width: 600px;
+    border-collapse: collapse;
   }
 
-footer{
-    grid-area: footer;
-    text-align: center;
-    color: white;
-    background-color: #222;
-}
-
+/*Responsiv design för navbaren*/
 @media (max-width: 600px) {
     nav ul{
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 600px){
-    section{
         flex-direction: column;
     }
 }
