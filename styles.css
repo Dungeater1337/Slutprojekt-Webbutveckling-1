@@ -19,7 +19,7 @@ body{
 }
 
 /*layout for main i nyheter.html och extra.html*/
-#nyhetsochextragrid{
+#extragrid{
     display:grid;
     grid-template-areas:
     "section section"
@@ -34,6 +34,16 @@ body{
     ;
 }
 
+/*Nyhetsbild med id*/
+#nyhetsbild{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+}
 /*placera header*/
 header{
     grid-area: header;
@@ -110,7 +120,7 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 22%;
+    width: 20%;
     max-width: 100%;
     height: auto;
 }
