@@ -125,6 +125,12 @@ p{
     height: auto;
 }
 
+/*Placerar formuläret i mitten*/
+form { 
+    margin: 0 auto;
+    width: 250px;    
+}
+
 /*Design för bilder "overall"*/
 img{
     display: block;
