@@ -125,7 +125,13 @@ p{
     height: auto;
 }
 
+/*id för rubrik placering*/
 #formulärrubrik{
+    text-align: center;
+}
+
+/*id för rubrik placering*/
+#videorubrik{
     text-align: center;
 }
 
@@ -147,6 +153,15 @@ img{
     height: auto;
 }
 
+/*Placera videon i mitten och sätter storlek*/
+iframe{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    width: 560px;
+    height: 315px;
+}
+
 /*Design för tabeller*/
 table, th, td {
     border:1px solid black;
@@ -159,6 +174,12 @@ table, th, td {
 /*Responsiv design för navbaren*/
 @media (max-width: 600px) {
     nav ul{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    #historiagrid {
         flex-direction: column;
     }
 }
