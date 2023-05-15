@@ -43,21 +43,6 @@ body{
     height: auto;
 }
 
-.lokalmeny ul{
-    color: #222;
-}
-
-.lokalmeny li a{
-    color: #222;
-    list-style-type: none;
-    margin: 0;
-    padding: 1px;
-}
-
-.lokalmeny a:hover{
-    text-decoration: underline;
-}
-
 /*placera header*/
 header{
     grid-area: header;
@@ -176,6 +161,22 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+.lokalmeny ul{
+    color: #222;
+}
+
+.lokalmeny li a{
+    color: #222;
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+}
+
+.lokalmeny a:hover{
+    text-decoration: underline;
+}
+
 
 /*Placera videon i mitten och sätter storlek*/
 iframe{
