@@ -125,10 +125,15 @@ p{
     height: auto;
 }
 
+#formulärrubrik{
+    text-align: center;
+}
+
 /*Placerar formuläret i mitten*/
 form { 
     margin: 0 auto;
-    width: 250px;    
+    margin-bottom: 2%;
+    width: 250px;   
 }
 
 /*Design för bilder "overall"*/
