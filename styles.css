@@ -21,17 +21,15 @@ body{
 /*layout for main i nyheter.html och extra.html*/
 #extragrid{
     display:grid;
-    grid-template-areas:
-    "section section"
-    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 }
 
 /*Layout för main i historia.html*/
-#historiagrid{
+#historiagrid {
     display: grid;
-    grid-template-areas: 
-    "section figure aside"
-    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 /*Nyhetsbild med id*/
@@ -135,6 +133,16 @@ p{
     text-align: center;
 }
 
+/*lägger till padding*/
+section, aside {
+    padding: 20px;
+}
+
+/*för min figure*/
+figure{
+    margin: 0;
+}
+
 /*Placerar formuläret i mitten*/
 form { 
     margin: 0 auto;
@@ -171,6 +179,12 @@ table, th, td {
     border-collapse: collapse;
   }
 
+/*varannan rad får färgen #222*/
+tr:nth-child(even) {
+    background-color: #222;
+    color: white;
+}
+
 /*Responsiv design för navbaren*/
 @media (max-width: 600px) {
     nav ul{
@@ -178,8 +192,15 @@ table, th, td {
     }
 }
 
-@media (max-width: 600px) {
+/*Responsiv design för min historiagridslayout*/
+@media (max-width: 1230px) {
     #historiagrid {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1230px) {
+    #extragrid {
+        grid-template-columns: 1fr;
     }
 }
