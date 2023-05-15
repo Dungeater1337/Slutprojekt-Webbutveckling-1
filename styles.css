@@ -199,6 +199,7 @@ tr:nth-child(even) {
     }
 }
 
+/*Responsiv design för extralayout*/
 @media (max-width: 1230px) {
     #extragrid {
         grid-template-columns: 1fr;
