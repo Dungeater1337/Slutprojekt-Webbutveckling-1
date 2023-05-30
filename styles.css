@@ -56,7 +56,8 @@ h1{
 /*Placera navbar och sätter bakgrundfärg*/
 nav{
     grid-area: navbar;
-    background: #222;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 1em;
 }
 
 /*Placera footer och design för den*/
@@ -87,7 +88,7 @@ li a {
 
 /*Ändra färg på länkarna på man hovera över*/
 li a:hover{  
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 
@@ -125,12 +126,7 @@ p{
 }
 
 /*id för rubrik placering*/
-#formulärrubrik{
-    text-align: center;
-}
-
-/*id för rubrik placering*/
-#videorubrik{
+#formulärrubrik, #videorubrik {
     text-align: center;
 }
 
@@ -161,22 +157,6 @@ img{
     max-width: 100%;
     height: auto;
 }
-
-.lokalmeny ul{
-    color: #222;
-}
-
-.lokalmeny li a{
-    color: #222;
-    list-style-type: none;
-    margin: 0;
-    padding: 1px;
-}
-
-.lokalmeny a:hover{
-    text-decoration: underline;
-}
-
 
 /*Placera videon i mitten och sätter storlek*/
 iframe{
@@ -209,16 +189,14 @@ tr:nth-child(even) {
     }
 }
 
-/*Responsiv design för min historiagridslayout*/
+/*Responsiv design för min historiagridslayout och extralayout*/
 @media (max-width: 1230px) {
     #historiagrid {
         grid-template-columns: 1fr;
     }
-}
 
-/*Responsiv design för extralayout*/
-@media (max-width: 1230px) {
     #extragrid {
         grid-template-columns: 1fr;
     }
 }
+
