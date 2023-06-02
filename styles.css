@@ -1,3 +1,4 @@
+
 /* Gör så body täcker hela sidan */
 body{
   margin: 0;
@@ -69,13 +70,18 @@ footer{
 }
 
 /*Sätter nav med ul som flex och gör så alla länkar är lika långt avstånd från varandra horizontelt*/
-nav ul{
+nav > ul{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
     padding: 1px;
 }
+
+/*Visar med färg vilken länk man har varit på LFH*/
+li a:visited{
+    color: blueviolet;
+ }
 
 /*Design för länkar*/
 li a {
@@ -90,11 +96,6 @@ li a {
 li a:hover{  
     background-color: rgb(255, 255, 255);
     color: black;
-}
-
-/*Visar med färg vilken länk man har varit på*/
-li a:visited{
-   color: blueviolet;
 }
 
 /*Gör så att rubrikerna inte börja längst ut åt vänster så det blir lättare att läsa*/
@@ -167,7 +168,7 @@ img{
 }
 
 /*Placera videon i mitten och sätter storlek*/
-iframe{
+video{
     display: block;
     margin: 0 auto;
     margin-bottom: 2%;
