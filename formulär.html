@@ -44,27 +44,48 @@
         <h2 id="formulärrubrik"> Fyll I vilken sport du tycker om mest </h2>
         <section>
           <!--Formulär-->
-          <form action="./tack.html" method="post">
+          <form action="./support.html" method="post">
             <label for="fname">Förnamn:</label>
             <br>
-            <input type="text" id="fname" name="fname" value="Namn">
+            <input type="text" id="fname" name="fname">
             <br>
-            <label for="enamn">Efternamn:</label>
+            <label for="ename">Efternamn:</label>
             <br>
-            <input type="text" id="enamn" name="ename" value="Efternamn">
+            <input type="text" id="ename" name="ename">
             <br>
+            <label for="email">Email:</label>
             <br>
-            <input type="radio" id="längdhopp" name="gren" value="Längdhopp">
-            <label for="längdhopp">Längdhopp</label>
+            <input type="text" id ="email" name ="email">
             <br>
-            <input type="radio" id="skidskytte" name="gren" value="Skidskytte">
-            <label for="skidskytte">Skidskytte</label>
+            <label for ="lösen">Lösenord:</label>
             <br>
-            <input type="radio" id="slagge" name="gren" value="Slagge">
-            <label for="slagge">Slagge</label>
+            <input type ="password" id ="lösenord" name ="lösenord">
             <br>
+            <input type="radio" id="Fotboll" name="gren" value="Fotboll">
+            <label for="Fotboll">Fotboll</label>
             <br>
-            <input type="submit" value="Send Request">
+            <input type="radio" id="Slagge" name="gren" value="Slagge">
+            <label for="Slagge">Slagge</label>
+            <br>
+            <input type="radio" id="Tennis" name="gren" value="Tennis">
+            <label for="Tennis">Tennis</label>
+            <br>
+            <p></p>
+            <input type="checkbox" id ="ålder" name ="ålder" value ="ålder">
+            <label for="ålder">Jag är över 18+</label>
+            <br>
+            <input type="checkbox" id ="ålderI" name ="ålderI" value="ålderI">
+            <label for="ålderI">Jag är över 34+</label>
+            <br>
+            <input type="checkbox" id ="ålderII" name ="ålderII" value="ålderII">
+            <label for="ålderII">Jag är 60+</label>
+            <br>
+            <p></p>
+            <label for="kommentarer">Kommentarer</label>
+            <textarea id="kommentarer" name="text"></textarea>
+            <br>
+            <p></p>
+            <input type="submit" value="Skicka in" >
           </form>
         </section>
       </main>
